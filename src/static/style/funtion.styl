@@ -1,0 +1,12 @@
+cu-opacity(n, z)
+    opacity: n;
+    ien = n * 100;      
+    filter: "alpha(opacity="ien")"; 
+    -moz-opacity:n;          
+    -khtml-opacity: n;    
+    zoom: z;      
+
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args

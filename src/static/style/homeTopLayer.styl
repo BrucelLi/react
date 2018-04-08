@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import './funtion.styl';
+
+#topLayer
+    width 100%
+    height auto
+    background-color white
+    .top-layer-top
+        background url('../img/headLayer.png');
+        width 100%
+        height 170px
+        display block
+        overflow hidden
+        .top-layer-label
+            width @width
+            height 42px
+            display block
+            overflow hidden
+            line-height: 42px;
+            background-color:  #e9e1d4
+            cu-opacity(0.7, 1);
+            .top-layer-label-box
+                .iconfont
+                    font-size: 16px;
+                    color: #00a1d6
+                margin 0 auto
+                .top-layer-label-left-nav
+                    padding 0 10px
+                .top-layer-label-left-nav:hover{
+                    background-color: white
+                }
+    .top-layer-nav
+        margin 0 auto
+        background-color red
