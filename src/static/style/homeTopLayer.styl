@@ -18,18 +18,128 @@
             display block
             overflow hidden
             line-height: 42px;
-            background-color:  #e9e1d4
+            color white
+            background-color:  #1f273f
             cu-opacity(0.7, 1);
             .top-layer-label-box
                 .iconfont
                     font-size: 16px;
                     color: #00a1d6
                 margin 0 auto
+                .head-img
+                    padding 0 10px
+                    cu-opacity(1, 1);
                 .top-layer-label-left-nav
                     padding 0 10px
                 .top-layer-label-left-nav:hover{
                     background-color: white
+                    color #000000
                 }
     .top-layer-nav
         margin 0 auto
         background-color red
+.game-hidden
+    background-color #ffffff
+    width 468px
+    height 280px
+    display inline-block
+    overflow hidden
+    border 1px solid #f6f9fa
+    vendor(border-radius, 6px)
+    vendor(box-shadow, #f6f9fa 2px 2px 2px 0)
+    z-index 2
+    .game-hidden-box
+        padding 10px
+        background-color #ffffff
+        .game-hidden-ltop
+            width 240px
+            height 130px
+            border: 2px solid #C0C0C0 
+            vendor(border-radius, 6px)
+            margin 0 0 10px 0
+        .game-hidden-lbottom-box
+            width 240px
+            height 130px
+            display block
+            overflow hidden
+        .game-hidden-lbottom
+            text-align center
+            img 
+                width 70px
+                height 70px
+                margin 0 0 10px 0
+        .game-hidden-r
+            width 180px
+            padding 0 0 10px 0
+            border-left 1px solid #666
+            vendor(box-shadow, #666 -1px 0px 0px 0)
+            .game-hidden-rtop img 
+                position relative
+                left -7px
+             .game-hidden-rtop div
+                 color #2b6db7
+        .game-hidden-rbottom
+            padding 10px
+            .game-hidden-rbottom-list
+                width 120px
+                display block
+                overflow hidden
+                padding 3px
+
+.live-hidden
+    background-color #ffffff
+    width 525px
+    height 265px
+    display inline-block
+    overflow hidden
+    border 1px solid #f6f9fa
+    vendor(border-radius, 6px)
+    vendor(box-shadow, #f6f9fa 2px 2px 2px 0)
+    z-index 2
+    .live-hidden-box
+        padding 10px
+        .live-hidden-top
+            width 100%
+            height 35px
+            span 
+                color #ffafc9
+        .live-hidden-bottom
+            width 100%
+            .live-hidden-bottom-live            
+                margin 5px
+                img 
+                    width 65px
+                    height 65px
+                    border: 2px solid #f6f9fa
+                    vendor(border-radius, 50%)
+                div
+                    width 70px
+                    text-align center
+                    height 25px
+                    display block
+                    overflow hidden
+            .live-hidden-bottom-act
+                margin 5px
+                padding 5px
+            .live-hidden-bottom-act:hover
+                background-color #e5e9ef
+                img 
+                    width 210px
+                    height 80px
+                    margin 0 auto
+
+.down-app-hidden
+    width 260px
+    height 175px
+    line-height 155px
+    background url('../img/orcode-frame.png')
+    background-size cover
+    .down-app-hidden-code
+        margin 0 auto
+        width 102px
+        height 102px
+
+
+            
+
+                 

@@ -9,4 +9,12 @@ cu-opacity(n, z)
 vendor(prop, args)
     -webkit-{prop} args
     -moz-{prop} args
+    -o-{prop} args
+    -ms-{prop} args
     {prop} args
+
+hand-back(c)
+    cursor: pointer;
+    &:hover:{
+        background-color c
+    }
