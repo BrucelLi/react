@@ -1,14 +1,14 @@
 import React from 'react';
 import {Route, BrowserRouter} from 'react-router-dom';
 
-import HomeTopLayer from './../../components/layer/HomeTopLayer';
+import HomeIndex from '../../views/home';
 import Test from '../../views/routeTest';
 
 const Home = ({history, location, match}) => (
     <BrowserRouter history={history} location={location}>
         <div>
             {/* 首页路由 */}
-            <Route exact path={`${match.path}`} component={HomeTopLayer} />
+            <Route exact path={`${match.path}`} component={HomeIndex} />
             <Route exact path={`${match.path}myname`} component={Test} />
             <Route exact path='/drawing/index' component={()=>(<h1>画友</h1>)} />
             <Route exact path='/game/index' component={()=>(<h1>游戏中心</h1>)} />

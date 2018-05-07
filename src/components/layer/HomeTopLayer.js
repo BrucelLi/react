@@ -370,9 +370,6 @@ class HomeTopLayer extends React.Component{
                             search
                         </div>
                     </div>
-                    <div className='content-with top-layer-nav'>                  
-                           bottom  {this.props.todos.text}                  
-                    </div>
                 </div>
                 <Test ani='animated pulse rubberBand' />
                 <div className='home-search-pos'>

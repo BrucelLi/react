@@ -1,3 +1,5 @@
+import * as http from '../../../api/http.js'
+
 export function itemTest(msg) {
     return http
          .post('test.send', {
