@@ -75,6 +75,36 @@ export function indexItem (type = null, page = 1, pageNum = 5) {
     })
 }
 
+// 首页导航栏目提示数字
+export function indexNavCount() {
+    let data = {
+        'code':0,
+        'message': '获取成功',
+        'data':{
+            'animateCount':798,
+            'hisPlayCount':84,
+            'aimtronCount':90,
+            'musicCount':9999,
+            'danceCount':171,
+            'gameCount':9999,
+            'scienceCount':9999,
+            'lifeCount':9999,
+            'demonCount':59,
+            'fashionCount':443,
+            'advertisingCount':90,
+            'entertainmentCount':9999,
+            'filmCount':9999,
+            'screensCount':145
+        }
+    }
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(data.data)
+        }, 1000)
+    })
+}
+
 export function itemTest(msg) {
     return http
          .post('test.send', {

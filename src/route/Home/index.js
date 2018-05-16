@@ -5,7 +5,7 @@ import HomeIndex from '../../views/home';
 import Test from '../../views/routeTest';
 
 const Home = ({history, location, match}) => (
-    <BrowserRouter history={history} location={location}>
+    <BrowserRouter>
         <div>
             {/* 首页路由 */}
             <Route exact path={`${match.path}`} component={HomeIndex} />
